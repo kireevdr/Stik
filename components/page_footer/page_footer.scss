@@ -1,0 +1,59 @@
+.page__footer {
+
+}
+.page-footer {
+
+}
+.page-footer__footer-header {
+	margin-bottom: 31px;
+
+}
+.page-footer__resembling-products {
+	display: flex;
+	flex-direction: row;
+}
+.page-footer__product {
+
+}
+.page-footer__img {
+	display: flex;
+	flex-direction: column;
+}
+.page-footer__resembling {
+	margin-top: 15px;
+	margin-left: 15px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.page-footer__specification {
+
+}
+.page-footer__prise {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+}
+.page-footer__prise-normal {
+
+}
+.page-footer__prise-discount {
+
+}
+.page-footer__prise-old {
+	text-decoration: line-through;
+}
+.row {
+	@include media-breakpoint-down(xs) {
+	}
+}
+.width-slide {
+	@include media-breakpoint-down(xs) {
+	}
+	max-width: 333.49px !important;
+	margin-right: 8px;
+	margin-bottom: 100px;
+}
+.flex-slides {
+
+}

@@ -1,0 +1,14 @@
+// Только миксины и переменные в этом файле,
+// т.к. содержимое будет добавлено в каждый компонент.
+// файлы со стилями необходимо подключать в index.scss
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import 'libs/bootstrap-grid';
+
+@import "vars";
+@import "mixins";
+@import "custom-libs";
+
+@import "user-content";

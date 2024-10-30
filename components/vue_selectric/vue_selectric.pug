@@ -1,0 +1,12 @@
+include ../../node_modules/bemto.pug/bemto.pug
+
++b.vue-selectric(:class='mode')
+	select(
+		:value='locValue'
+		@change='onChange($event)'
+		ref='select'
+		:name='name'
+		:required='required'
+	).selectric
+		option(v-if='emptyOption' :value='emptyOption.value') {{emptyOption.text}}
+		option(v-for='(option) in options', :value='option.value') {{option.text}}

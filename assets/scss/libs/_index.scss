@@ -1,0 +1,28 @@
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins/hover";
+@import "~bootstrap/scss/mixins/border-radius";
+@import "~bootstrap/scss/utilities/borders";
+@import "~bootstrap/scss/nav";
+
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/modal";
+@import "~bootstrap/scss/functions";
+
+// fade
+
+@import '~vue-page-transition/src/styles/transitions/fade/fade.scss';
+
+// overlay
+@import '~vue-page-transition/src/styles/transitions/overlay/overlay-right.scss';
+@import '~vue-page-transition/src/styles/transitions/overlay/overlay-down.scss';
+@import '~vue-page-transition/src/styles/transitions/overlay/overlay-up.scss';
+@import '~vue-page-transition/src/styles/transitions/overlay/overlay-left.scss';
+@import '~vue-page-transition/src/styles/transitions/overlay/overlay-up-full.scss';
+@import '~vue-page-transition/src/styles/transitions/overlay/overlay-right-full.scss';
+@import '~vue-page-transition/src/styles/transitions/overlay/overlay-down-full.scss';
+@import '~vue-page-transition/src/styles/transitions/overlay/overlay-left-full.scss';
+@import '~vue-page-transition/src/styles/transitions/overlay/overlay-up-down.scss';
+@import '~vue-page-transition/src/styles/transitions/overlay/overlay-left-right.scss';
+
+@import "custom-libs-global";
+

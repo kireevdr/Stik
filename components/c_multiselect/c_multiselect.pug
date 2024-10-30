@@ -1,0 +1,18 @@
+include ../../node_modules/bemto.pug/bemto.pug
+
++b.c-multiselect
+	multiselect(
+		:options='options'
+		:multiple="true",
+		:searchable="false",
+		:close-on-select="false",
+		:clear-on-select="false",
+		track-by="val",
+		label="text",
+		placeholder="Выбрать",
+		v-model='localValue'
+		:taggable="false",
+		selectLabel='Нажмите Enter для выбора'
+		selectedLabel='Выбрано'
+		deselectLabel='Нажмите Enter для отмены выбора'
+	)

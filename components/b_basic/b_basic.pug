@@ -1,0 +1,76 @@
+include ../../node_modules/bemto.pug/bemto.pug
++b.b-basic
+	.container
+		+e.basic-flex
+			+e.slider
+				.swiper-container(v-swiper:mySwiper="swiperOptionsTop"  ref="swiperTop")
+					.swiper-wrapper.lightgallery
+						.swiper-slide
+							+e.DIV.img
+								img(src='/img/general/Imagemain.png' alt="gfdgd")
+						.swiper-slide
+							+e.DIV.img
+								img(src='/img/general/Imagemain.png' alt="gfdgd")
+						.swiper-slide
+							+e.DIV.img
+								img(src='/img/general/Imagemain.png' alt="gfdgd")
+					.swiper-pagination
+			+e.thumbs
+				.swiper-container.gallery-thumbs(ref="swiperThumbs")
+					.swiper-wrapper
+						.swiper-slide
+							+e.slide
+								+e.img
+									img(src='/img/general/Image-1.png' alt="gfdgd")
+						.swiper-slide
+							+e.slide
+								+e.img
+									img(src='/img/general/Image (2).png' alt="gfdgd")
+						.swiper-slide
+							+e.slide
+								+e.img
+									img(src='/img/general/Image (3).png' alt="gfdgd")
+			+e.product
+				+e.product-name
+					+e.name ЖАКЕТ УДЛИНЕННЫЙ, БЕЛЫЙ
+					+e.price 8900 RUB
+				+e.product-size
+					+e.size Размеры
+					+e.size-icons
+						+e.size-icon
+							+e.A.size-name.link(href='/') XS
+							+e.size-text мало
+						+e.size-icon
+							+e.A.size-name.link(href='/') S
+							+e.size-text
+						+e.size-icon
+							+e.A.size-name.link(href='/') M
+							+e.size-text подписка
+				+e.product-color
+					+e.color
+						+e.color-name Цвет: белый
+						+e.color-icon
+						+e.color-icon
+						+e.color-icon
+					//+e.color
+					//	+e.color-name Цвет: черный
+					//	+e.color-icon
+					//+e.color
+					//	+e.color-name Цвет: бежевый
+					//	+e.color-icon
+				+e.product-cart
+					+e.A.put.link(href='/') ДОБАВИТЬ В КОРЗИНУ
+					+e.A.favourites.link(href='/')
+						img(src='/img/general/flag.png' alt="gfdgd")
+				+e.product-text
+					+e.about
+						+e.HR.hr
+						+e.A.about-flex.link(href='/')
+							+e.about-header ОПИСАНИЕ
+							+e.plus +
+					+e.compound
+						+e.HR.hr
+						+e.A.compound-flex.link(href='/')
+							+e.compound-header СОСТАВ И УХОД
+							+e.plus +
+					+e.HR.hr-down

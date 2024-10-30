@@ -1,0 +1,51 @@
+.theme-light {
+	.b-404 {
+		--color: #1C1C1C;
+	}
+}
+
+.theme-dark {
+	.b-404 {
+		--color: #fff;
+	}
+}
+
+.b-404 {
+	padding: g(14) 0 g(12);
+	position: relative;
+	color: var(--color);
+}
+
+.b-404__title {
+	font-size: rem(160);
+	margin-bottom: rem(15);
+}
+
+.b-404__text {
+	font-size: rem(35);
+	font-weight: 700;
+	margin-bottom: rem(15);
+}
+
+.b-404__help {
+	font-size: 18px;
+	margin-bottom: rem(30);
+}
+
+.b-404__btns {
+
+}
+
+.b-404__btn {
+	@include btn;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+@include media-breakpoint-down(sm) {
+	.b-404 {
+		padding: g(12) 0 g(12);
+		position: relative;
+	}
+
+}

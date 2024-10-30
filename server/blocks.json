@@ -1,0 +1,834 @@
+{
+	"library": {
+		"b_text": {
+			"view": "b_text",
+			"preview": "/img/blocks-library/b_text.jpg",
+			"name": "Текстовый блок",
+			"class": "",
+			"id": "",
+			"content": [
+				{
+					"type": "wysiwyg",
+					"name": "text",
+					"label": "",
+					"help": "",
+					"val": "<p>123</p>"
+				}
+			]
+		},
+		"b_main": {
+			"view": "b_main",
+			"preview": "/img/blocks-library/b_main.jpg",
+			"name": "Первый экран",
+			"class": "",
+			"id": "",
+			"content": [
+				{
+					"type": "text",
+					"name": "title",
+					"label": "Заголовок",
+					"help": "",
+					"val": ""
+				},
+				{
+					"type": "text",
+					"name": "subtitle",
+					"label": "Подзаголовок",
+					"help": "",
+					"val": ""
+				},
+				{
+					"type": "image",
+					"name": "bg",
+					"label": "Фон",
+					"help": "",
+					"val": ""
+				},
+				{
+					"type": "checkbox",
+					"name": "golden_ratio",
+					"label": "Золотое сечение",
+					"help": "",
+					"val": 0
+				},
+				{
+					"type": "gallery",
+					"name": "doctors",
+					"label": "Слайдер врачей",
+					"val": [
+					]
+				}
+			]
+		},
+		"b_main_items": {
+			"view": "b_main_items",
+			"preview": "/img/blocks-library/b_main_items.png",
+			"name": "Второй экран",
+			"class": "",
+			"id": "",
+			"content": [
+				{
+					"type": "collection",
+					"name": "links",
+					"label": "Ссылки",
+					"labelItem": "Ссылка",
+					"expand": "false",
+					"max": 2,
+					"fields": [
+						{
+							"type": "text",
+							"name": "name",
+							"label": "Заголовок",
+							"help": "",
+							"val": ""
+						},
+						{
+							"type": "text",
+							"name": "link",
+							"label": "Ссылка",
+							"help": "",
+							"val": ""
+						},
+						{
+							"type": "image",
+							"name": "b_main_items__img",
+							"label": "Иконка",
+							"help": "",
+							"val": ""
+						}
+					],
+					"val": [
+					]
+				}
+			]
+		},
+		"b_main_about": {
+			"view": "b_main_about",
+			"preview": "/img/blocks-library/b_main_about.jpg",
+			"name": "О клинике",
+			"class": "",
+			"id": "",
+			"content": [
+				{
+					"type": "text",
+					"name": "title",
+					"label": "Заголовок",
+					"help": "",
+					"val": ""
+				},
+				{
+					"type": "wysiwyg",
+					"name": "text",
+					"label": "Текст",
+					"help": "",
+					"val": ""
+				},
+				{
+					"type": "image",
+					"name": "b_main_about__img",
+					"label": "Картинка",
+					"help": "",
+					"val": ""
+				},
+				{
+					"type": "collection",
+					"name": "advantages",
+					"label": "Преимущества",
+					"expand": "false",
+					"fields": [
+						{
+							"type": "text",
+							"name": "name",
+							"label": "Имя",
+							"help": "",
+							"val": ""
+						},
+						{
+							"type": "text",
+							"name": "desc",
+							"label": "Описание",
+							"help": "",
+							"val": ""
+						}
+					],
+					"labelItem": "Преимущество",
+					"val": [
+					]
+				}
+			]
+		},
+		"b_spec_slider": {
+			"view": "b_spec_slider",
+			"preview": "/img/blocks-library/b_spec_slider.jpg",
+			"name": "Слайдер специалистов",
+			"class": "",
+			"id": "",
+			"content": [
+				{
+					"type": "text",
+					"name": "title",
+					"label": "Заголовок",
+					"help": "",
+					"val": ""
+				},
+				{
+					"type": "text",
+					"name": "btnText",
+					"label": "Текст на кнопке",
+					"help": "",
+					"val": ""
+				}
+			]
+		},
+		"b_excursion": {
+			"view": "b_excursion",
+			"preview": "/img/blocks-library/b_excursion.jpg",
+			"name": "Директор о клинике",
+			"class": "",
+			"id": "",
+			"content": [
+				{
+					"type": "text",
+					"name": "title",
+					"label": "Заголовок",
+					"help": "",
+					"val": ""
+				},
+				{
+					"type": "wysiwyg",
+					"name": "text",
+					"label": "Текст",
+					"help": "",
+					"val": ""
+				},
+				{
+					"type": "image",
+					"name": "b_excursion__img",
+					"label": "Фото",
+					"help": "",
+					"val": ""
+				},
+				{
+					"type": "text",
+					"name": "video",
+					"label": "Ссылка на видео",
+					"help": "",
+					"val": ""
+				},
+				{
+					"type": "text",
+					"name": "video-name",
+					"label": "Название видео",
+					"help": "",
+					"val": ""
+				}
+			]
+		},
+		"b_news_slider": {
+			"view": "b_news_slider",
+			"preview": "/img/blocks-library/b_news_slider.jpg",
+			"name": "Слайдер новостей",
+			"class": "",
+			"id": "",
+			"content": [
+				{
+					"type": "text",
+					"name": "title",
+					"label": "Заголовок",
+					"help": "",
+					"val": ""
+				},
+				{
+					"type": "text",
+					"name": "btnText",
+					"label": "Текст на кнопке",
+					"help": "",
+					"val": ""
+				}
+			]
+		},
+		"b_sign_up": {
+			"view": "b_sign_up",
+			"preview": "/img/blocks-library/b_sign_up.jpg",
+			"name": "ДМС лого",
+			"class": "",
+			"id": "",
+			"content": [
+				{
+					"type": "text",
+					"name": "title",
+					"label": "Заголовок",
+					"help": "",
+					"val": ""
+				},
+				{
+					"type": "wysiwyg",
+					"name": "text",
+					"label": "Текст",
+					"help": "",
+					"val": ""
+				},
+				{
+					"type": "text",
+					"name": "btnText",
+					"label": "Текст на кнопке",
+					"help": "",
+					"val": ""
+				},
+				{
+					"type": "gallery",
+					"name": "b_sign_up__logos",
+					"label": "Логотипы компаний",
+					"accept": ".svg",
+					"val": [
+					]
+				}
+			]
+		},
+		"b_services_slider": {
+			"view": "b_services_slider",
+			"preview": "/img/blocks-library/b_services_slider.jpg",
+			"name": "Слайдер преимуществ",
+			"class": "",
+			"id": "",
+			"content": [
+				{
+					"type": "text",
+					"name": "title",
+					"label": "Заголовок",
+					"help": "",
+					"val": ""
+				},
+				{
+					"type": "collection",
+					"name": "items",
+					"label": "Преимущества",
+					"expand": "false",
+					"fields": [
+						{
+							"type": "text",
+							"name": "name",
+							"label": "Название",
+							"help": "",
+							"val": ""
+						},
+						{
+							"type": "wysiwyg",
+							"name": "desc",
+							"label": "Описание",
+							"help": "",
+							"val": ""
+						},
+						{
+							"type": "image",
+							"name": "b_services_slider__img",
+							"label": "Иконка",
+							"help": "",
+							"val": ""
+						}
+					],
+					"labelItem": "Преимущество",
+					"val": [
+					]
+				}
+			]
+		},
+		"b_about_list": {
+			"view": "b_about_list",
+			"preview": "/img/blocks-library/b_about_list.jpg",
+			"name": "Статистика",
+			"class": "",
+			"id": "",
+			"content": [
+				{
+					"type": "collection",
+					"name": "advantages",
+					"label": "Преимущества",
+					"expand": "false",
+					"fields": [
+						{
+							"type": "text",
+							"name": "name",
+							"label": "Имя",
+							"help": "",
+							"val": ""
+						},
+						{
+							"type": "text",
+							"name": "desc",
+							"label": "Описание",
+							"help": "",
+							"val": ""
+						}
+					],
+					"labelItem": "Преимущество",
+					"val": [
+					]
+				},
+				{
+					"type": "wysiwyg",
+					"name": "text",
+					"label": "Текст",
+					"help": "",
+					"val": ""
+				}
+			]
+		},
+		"b_text_col": {
+			"view": "b_text_col",
+			"preview": "/img/blocks-library/b_text_col.jpg",
+			"name": "Текст 2 колонки",
+			"class": "",
+			"id": "",
+			"content": [
+				{
+					"type": "wysiwyg",
+					"name": "text_left",
+					"label": "Текст слева",
+					"help": "",
+					"val": ""
+				},
+				{
+					"type": "wysiwyg",
+					"name": "text_right",
+					"label": "Текст справа",
+					"help": "",
+					"val": ""
+				}
+			]
+		},
+		"b_photo_slider": {
+			"view": "b_photo_slider",
+			"preview": "/img/blocks-library/b_photo_slider.jpg",
+			"name": "Слайдер фото",
+			"class": "",
+			"id": "",
+			"content": [
+				{
+					"type": "gallery",
+					"name": "b_photo_slider__img",
+					"label": "Галлерея",
+					"val": [
+					]
+				}
+			]
+		},
+		"b_premios": {
+			"view": "b_premios",
+			"preview": "/img/blocks-library/b_premios.jpg",
+			"name": "Награды",
+			"class": "",
+			"id": "",
+			"content": [
+				{
+					"type": "text",
+					"name": "title",
+					"label": "Заголовок",
+					"help": "",
+					"val": ""
+				},
+				{
+					"type": "collection",
+					"name": "items",
+					"label": "Награды",
+					"labelItem": "Награда",
+					"expand": "false",
+					"fields": [
+						{
+							"type": "wysiwyg",
+							"name": "name",
+							"label": "Название",
+							"help": "",
+							"val": ""
+						},
+						{
+							"type": "image",
+							"name": "b_premios__img",
+							"label": "Фото",
+							"help": "",
+							"val": ""
+						}
+					],
+					"val": [
+					]
+				}
+			]
+		},
+		"b_whales": {
+			"view": "b_whales",
+			"preview": "/img/blocks-library/b_whales.jpg",
+			"name": "Преимущества",
+			"class": "",
+			"id": "",
+			"content": [
+				{
+					"type": "text",
+					"name": "title",
+					"label": "Заголовок",
+					"help": "",
+					"val": ""
+				},
+				{
+					"type": "collection",
+					"name": "items",
+					"label": "Преимущества",
+					"expand": "false",
+					"fields": [
+						{
+							"type": "text",
+							"name": "name",
+							"label": "Название",
+							"help": "",
+							"val": ""
+						},
+						{
+							"type": "image",
+							"name": "b_whales__img",
+							"label": "Иконка",
+							"help": "",
+							"val": ""
+						}
+					],
+					"labelItem": "Преимущество",
+					"val": [
+					]
+				}
+			]
+		},
+		"b_principles": {
+			"view": "b_principles",
+			"preview": "/img/blocks-library/b_principles.jpg",
+			"name": "Слайдер принципов",
+			"class": "",
+			"id": "",
+			"content": [
+				{
+					"type": "text",
+					"name": "title",
+					"label": "Заголовок",
+					"help": "",
+					"val": ""
+				},
+				{
+					"type": "wysiwyg",
+					"name": "text",
+					"label": "Текст",
+					"help": "",
+					"val": ""
+				},
+				{
+					"type": "collection",
+					"name": "items",
+					"label": "Слайды",
+					"labelItem": "Слайд",
+					"expand": "false",
+					"fields": [
+						{
+							"type": "text",
+							"name": "name",
+							"label": "Название",
+							"help": "",
+							"val": ""
+						},
+						{
+							"type": "wysiwyg",
+							"name": "desc",
+							"label": "Описание",
+							"help": "",
+							"val": ""
+						},
+						{
+							"type": "gallery",
+							"name": "b_principles__img",
+							"label": "2 картинки",
+							"max": 2,
+							"help": "",
+							"val": ""
+						}
+					],
+					"val": [
+					]
+				}
+			]
+		},
+		"b_tech_slider": {
+			"view": "b_tech_slider",
+			"preview": "/img/blocks-library/b_tech_slider.jpg",
+			"name": "Слайдер технологии",
+			"class": "",
+			"id": "",
+			"content": [
+				{
+					"type": "text",
+					"name": "title",
+					"label": "Заголовок",
+					"help": "",
+					"val": ""
+				},
+				{
+					"type": "collection",
+					"name": "slides",
+					"label": "Слайды",
+					"labelItem": "Слайд",
+					"expand": "false",
+					"fields": [
+						{
+							"type": "text",
+							"name": "name",
+							"label": "Название",
+							"help": "",
+							"val": ""
+						},
+						{
+							"type": "wysiwyg",
+							"name": "desc",
+							"label": "Описание",
+							"help": "",
+							"val": ""
+						},
+						{
+							"type": "image",
+							"name": "b_tech_slider__slide-img",
+							"label": "Изображение",
+							"help": "",
+							"val": ""
+						}
+					],
+					"val": [
+					]
+				},
+				{
+					"type": "collection",
+					"name": "advantages",
+					"label": "Преимущества",
+					"expand": "false",
+					"fields": [
+						{
+							"type": "text",
+							"name": "name",
+							"label": "Имя",
+							"help": "",
+							"val": ""
+						},
+						{
+							"type": "text",
+							"name": "desc",
+							"label": "Описание",
+							"help": "",
+							"val": ""
+						}
+					],
+					"labelItem": "Преимущество",
+					"val": [
+					]
+				}
+			]
+		},
+		"b_service_list": {
+			"view": "b_service_list",
+			"preview": "/img/blocks-library/b_service_list.jpg",
+			"name": "Список дочерних услуг",
+			"class": "",
+			"id": "",
+			"content": [
+			]
+		},
+		"b_service_initial": {
+			"view": "b_service_initial",
+			"preview": "/img/blocks-library/b_service_initial.jpg",
+			"name": "Описание 2 колонки",
+			"class": "",
+			"id": "",
+			"content": [
+				{
+					"type": "text",
+					"name": "title",
+					"label": "Заголовок",
+					"help": "",
+					"val": ""
+				},
+				{
+					"type": "collection",
+					"name": "cols",
+					"label": "Колонки",
+					"labelItem": "Колонка",
+					"expand": "false",
+					"max": 2,
+					"fields": [
+						{
+							"type": "text",
+							"name": "name",
+							"label": "Заголовок",
+							"help": "",
+							"val": ""
+						},
+						{
+							"type": "wysiwyg",
+							"name": "text",
+							"label": "Текст",
+							"help": "",
+							"val": ""
+						},
+						{
+							"type": "image",
+							"name": "b_service_initial__img",
+							"label": "Картинка",
+							"help": "",
+							"val": ""
+						},
+						{
+							"type": "text",
+							"name": "btnText",
+							"label": "Текст на кнопке",
+							"help": "",
+							"val": ""
+						},
+						{
+							"type": "text",
+							"name": "btnLink",
+							"label": "Ссылка на кнопке",
+							"help": "",
+							"val": ""
+						}
+					],
+					"val": [
+					]
+				}
+			]
+		},
+		"b_service_end": {
+			"view": "b_service_end",
+			"preview": "/img/blocks-library/b_service_end.jpg",
+			"name": "Дочерние услуги с описанием",
+			"class": "",
+			"id": "",
+			"content": [
+			]
+		},
+		"b_stages_items": {
+			"view": "b_stages_items",
+			"preview": "/img/blocks-library/b_stages_items.jpg",
+			"name": "Показания/Противопоказания",
+			"class": "",
+			"id": "",
+			"content": [
+			]
+		},
+		"b_stages": {
+			"view": "b_stages",
+			"preview": "/img/blocks-library/b_stages.jpg",
+			"name": "Этапы проведения",
+			"class": "",
+			"id": "",
+			"content": [
+				{
+					"type": "text",
+					"name": "title",
+					"label": "Заголовок",
+					"help": "",
+					"val": ""
+				},
+				{
+					"type": "collection",
+					"name": "items",
+					"label": "Этапы",
+					"labelItem": "Этап",
+					"expand": "false",
+					"fields": [
+						{
+							"type": "text",
+							"name": "name",
+							"label": "Название",
+							"help": "",
+							"val": ""
+						},
+						{
+							"type": "wysiwyg",
+							"name": "desc",
+							"label": "Описание",
+							"help": "",
+							"val": ""
+						}
+					],
+					"val": [
+					]
+				}
+			]
+		},
+		"b_stages_slider": {
+			"view": "b_stages_slider",
+			"preview": "/img/blocks-library/b_stages_slider.jpg",
+			"name": "Слайдер этапов",
+			"class": "",
+			"id": "",
+			"content": [
+				{
+					"type": "text",
+					"name": "title",
+					"label": "Заголовок",
+					"help": "",
+					"val": ""
+				},
+				{
+					"type": "collection",
+					"name": "slides",
+					"label": "Слайды",
+					"labelItem": "Слайд",
+					"expand": "false",
+					"fields": [
+						{
+							"type": "text",
+							"name": "name",
+							"label": "Название",
+							"help": "",
+							"val": ""
+						},
+						{
+							"type": "wysiwyg",
+							"name": "desc",
+							"label": "Описание",
+							"help": "",
+							"val": ""
+						},
+						{
+							"type": "image",
+							"name": "b_stages_slider-img",
+							"label": "Изображение",
+							"help": "",
+							"val": ""
+						}
+					],
+					"val": [
+					]
+				}
+			]
+		},
+		"b_stages_price": {
+			"view": "b_stages_price",
+			"preview": "/img/blocks-library/b_stages_price.jpg",
+			"name": "Цены",
+			"class": "",
+			"id": "",
+			"content": [
+			]
+		},
+		"b_slider_before": {
+			"view": "b_slider_before",
+			"preview": "/img/blocks-library/b_slider_before.jpg",
+			"name": "Слайдер работ",
+			"class": "",
+			"id": "",
+			"content": [
+			]
+		},
+		"b_reviews_slider": {
+			"view": "b_reviews_slider",
+			"preview": "/img/blocks-library/b_reviews_slider.jpg",
+			"name": "Слайдер отзывов",
+			"class": "",
+			"id": "",
+			"content": [
+			]
+		}
+	}
+}

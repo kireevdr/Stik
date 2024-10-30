@@ -1,0 +1,146 @@
+.modal-left {
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	.modal-content {
+		height: 100vh;
+		background: #E5E5E5;
+	}
+	.modal-dialog {
+		width: 98%;
+	}
+}
+.modal-xl {
+
+}
+.modal-parking {
+	.modal-content {
+		height: 50vh;
+		background: #E5E5E5;
+	}
+}
+.modal-call {
+	.modal-content {
+		background: #FFFFFF;
+		height: auto;
+		width: 579px;
+	}
+	.modal-header .close {
+		top: 30px;
+		right: 30px;
+		@include media-breakpoint-down(sm) {
+			top: 20px;
+			right: 20px;
+		}
+	}
+	@include media-breakpoint-down(md) {
+		.modal-content {
+			width: 100%;
+		}
+		.modal-body {
+			padding: g(11);
+		}
+	}
+	@include media-breakpoint-down(sm) {
+		.modal-body {
+			padding: g(12) 20px;
+		}
+	}
+}
+
+
+.modal-floor {
+	.modal-content {
+		background: #f9f9f9;
+	}
+}
+
+.modal-visual {
+	.modal-header .close {
+		top: 30px;
+		right: 30px;
+		z-index: 1000;
+		background-size: 30px;
+	}
+	.modal-body {
+		padding: 0;
+	}
+}
+
+.modal-xl {
+	.modal-header .close {
+		top: 30px;
+		right: 30px;
+		@include media-breakpoint-down(sm) {
+			top: 20px;
+			right: 20px;
+		}
+	}
+	@include media-breakpoint-up(lg) {
+		max-width: 1332px;
+	}
+	@include media-breakpoint-down(md) {
+		.modal-body {
+			padding: var(--g12);
+		}
+	}
+	@include media-breakpoint-down(sm) {
+		.modal-body {
+			padding: 55px g(11);
+		}
+	}
+}
+.modal-full {
+	max-width: 100%;
+	width: 100%;
+	margin: 0;
+
+	.modal-body {
+		padding: 0;
+	}
+
+	iframe {
+		@include height-in-vh(100);
+		display: block;
+		width: 100%;
+	}
+}
+.modal-body {
+	@include media-breakpoint-up(lg) {
+		padding: g(12) g(11);
+	}
+	@include media-breakpoint-down(lg) {
+		padding-top: 50px;
+	}
+}
+.modal-header {
+	border: none;
+	position: relative;
+	padding: 0;
+	display: flex;
+	align-items: center;
+}
+.modal-header .close {
+	position: absolute;
+	top: rem(30);
+	left: rem(30);
+	width: rem(53px);
+	height: rem(53px);
+	font-size: 0;
+	background-image: url("/img/content/modal-close.svg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: inherit;
+	cursor: pointer;
+	z-index: 35;
+	opacity: 1;
+	@include round;
+	@include media-breakpoint-down(sm) {
+		top: 25px;
+		right: 25px;
+	}
+}
+.modal-content {
+	border: none;
+	border-radius: 0;
+}

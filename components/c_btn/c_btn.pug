@@ -1,0 +1,35 @@
+include ../../node_modules/bemto.pug/bemto.pug
+
++b.A.c-btn(
+	v-if='href'
+	:class='mode'
+	:href='href'
+	:target='target'
+	v-on="$listeners"
+	:style="{'--news-color': color}"
+)
+	slot
+	+e.loader(v-if='loading')
+		span
+		span
+		span
+
+
++b.COMPONENT.c-btn(
+	v-else
+	:is='tag_computed'
+	:class='mode'
+	:to='to'
+	:target='target'
+	v-on="$listeners"
+	:style="{'--news-color': color}"
+)
+	slot
+	+e.loader(v-if='loading')
+		span
+		span
+		span
+	+e.arrow(v-if="arrow")
+		svg-icon(name="arrow-share")
+	+e.filter(v-if="filter")
+		svg-icon(name="filter")

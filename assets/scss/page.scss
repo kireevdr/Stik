@@ -1,0 +1,449 @@
+@include lightgallery;
+
+.page {
+
+	display: flex;
+	flex-direction: column;
+	@include height-in-vh(100);
+	position: relative;
+	z-index: 10;
+	background: var(--bg);
+	@include media-breakpoint-down(md) {
+		background: var(--bg);
+	}
+
+	& > * {
+		position: relative;
+		z-index: 2;
+	}
+
+	&_lk {
+		min-height: auto;
+	}
+
+	&.backstop {
+
+		--vh: 10.42px;
+		@include media-breakpoint-down(sm) {
+			--vh: 8.12px;
+		}
+	}
+}
+
+
+.swiper-container:not(.swiper-container-initialized) {
+	opacity: 0;
+}
+
+.page__wrapper {
+	margin-bottom: auto;
+	z-index: 20;
+	background: #F4F5F7;
+}
+
+.page__header {
+	z-index: 50;
+	position: relative;
+}
+
+.page__b-nav,
+.page__b-links,
+{
+	margin-bottom: g(12);
+}
+
+.page__b-tags,
+.page__b-reviews-slider {
+	margin-bottom: g(13);
+}
+
+.page__b-main-items {
+	position: relative;
+	margin-top: -96px;
+	z-index: 14;
+}
+
+.page__b-stages-items {
+	position: relative;
+	//margin-top: -96px;
+	//z-index: -1;
+}
+
+.page__b-tech-items {
+	position: relative;
+	margin-top: -96px;
+	z-index: -1;
+}
+
+@include media-breakpoint-down(xl) {
+	.page__b-main-items {
+		margin-top: g(12);
+	}
+}
+
+.page-header__menu_open {
+	background: #fff;
+}
+
+.page__content {
+	margin-bottom: 80px;
+}
+
+.page__text {
+	padding-bottom: g(14);
+}
+
+.page__b-blog-inner,
+{
+	margin-bottom: g(11);
+}
+
+.page__b-prices-search,
+.page__b-service-list {
+	margin-bottom: g(13);
+}
+
+.page__b-spec-inner {
+	margin-bottom: g(14);
+}
+
+.page__b-map-section {
+	padding-top: g(11);
+}
+.page__b-apartments {
+	background: #F6F6F6;
+}
+
+.page__b_main_about,
+.page__b-sign-up-form,
+.page__b-services-slider,
+.page__b-main-about,
+.page__b-excursion,
+.page__b-photo-slider,
+.page__b-premios,
+.page__b-stages,
+.page__b-service-item,
+.page__b-service-list,
+.page__b-service-end,
+.page__b-stages-items,
+.page__b-contacts,
+.page__b-gallery,
+.page__b-contacts,
+.page__b-vacancies,
+.page__b-apartments,
+.page__b-apartments-list,
+.page__b-second-main-slider,
+.page__b-apartments-list,
+.page__b-manufacture,
+.page__b-mortgage,
+.page__b-news-list,
+.page__b-contacts-list,
+.page__b-contacts-slider,
+.page__b-apartments-filter,
+.page__b-contacts-slider,
+.page__b-project-slider,
+.page__b-number-right,
+.page__b-slider-text-description,
+.page__b-partners-block,
+.page__b-action-promo,
+.page__b-text,
+.page__b-action-slider,
+.page__b-news-detail,
+.page__b-visual-parking,
+.page__b-news-detail,
+.page__b-history,
+.page__b-news-detail,
+.page__b-steps,
+.page__b-steps-columns,
+.page__b-apartments-desc,
+.page__b-map-resale,
+.page__b-news-detail,
+.page__b-history,
+.page__b-sort,
+.page__b-planning-slider,
+.page__b-sort,
+.page__b-form-section,
+.page__b-sort,
+.page__b-projects-slider,
+.page__b-sort,
+.page__b-features-slider,
+.page__b-apartments-section,
+.page__b-callback,
+.page__b-projects-gallery,
+.page__b-tech-parameters,
+.page__b-mortgage-registration,
+.page__b-apartments-slider,
+.page__b-to-buy,
+.page__b-banks-section,
+.page__b-infrastructure,
+.page__b-project-list,
+.page__b-map-section,
+.page__b-team-slider,
+.page__b-about,
+.page__b-news-slider,
+.page__b-about,
+.page__b-text-card,
+.page__b-vacancies-filter,
+.page__b-vacancies-list,
+.page__b-text-img,
+.page__b-colored-slider
+{
+	margin: g(12) 0;
+}
+.page__b-news-list-inner,
+.page__b-news
+{
+	margin: g(13) 0;
+	@include media-breakpoint-down(lg) {
+		margin: g(12) 0;
+	}
+}
+
+.page__b-standard,
+.page__b-intro-simple,
+.page__b-whales,
+.page__b-apartments-detail,
+.page__b-docs,
+{
+	margin-bottom: g(12);
+}
+
+.page__b-excursion {
+	@include media-breakpoint-up(xl) {
+		margin-top: -180px;
+	}
+}
+
+.page__dynamic-item {
+	&:not(:last-child) {
+		margin-bottom: g(12);
+	}
+}
+.page__b-projects-gallery + .page__b-tech-parameters {
+	@include media-breakpoint-up(md) {
+		margin-top: calc(#{g(12)} * -1);
+	}
+}
+.toast-body {
+	padding: 15px;
+}
+
+.page__map {
+	position: relative;
+}
+
+
+/*fade*/
+
+//.fade-enter-active {
+//	z-index: 100;
+//}
+//.fade-leave-active {
+//
+//}
+.fade-leave-to,
+.fade-enter-active {
+	z-index: 20;
+	position: relative;
+}
+
+.fade-enter-active {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+
+}
+
+//.fade-leave-active {
+//	opacity: 0;
+//
+//}
+//
+//.fade-enter-active,
+//.fade-leave-active {
+//	transition-timing-function: linear;
+//	transition: opacity 10s;
+//}
+.fade-enter-active,
+.fade-leave-active {
+	transition: opacity 0.6s;
+
+}
+
+.fade-enter,
+.fade-leave-to {
+	opacity: 0;
+}
+
+
+/*slide-left*/
+.slide-leave-active {
+	display: none;
+}
+
+.slide-enter-active {
+	transition: clip-path 1s;
+	//transition-timing-function: linear;
+	//transition-timing-function: cubic-bezier(0.81, 0.23, 0.33, 0.76);
+	//transition-timing-function: cubic-bezier(1, 0.29, 0.49, 0.79);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+
+	.slide {
+		z-index: 150;
+
+
+	}
+
+}
+
+.slide-enter, .slide-leave-active {
+	//opacity: 0;
+}
+
+.slide-enter {
+	clip-path: polygon(0% 0%, 00% 0%, 0% 100%, 0% 100%);
+}
+
+/*.slide-up*/
+.slide-up-leave-active {
+	display: none;
+}
+
+.slide-up-enter-active {
+	transition: clip-path 1s;
+	transition-timing-function: linear;
+	//transition-timing-function: cubic-bezier(0.81, 0.23, 0.33, 0.76);
+	//transition-timing-function: cubic-bezier(1, 0.29, 0.49, 0.79);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+
+	clip-path: polygon(0% 0%, 100vw 0%, 100vw 100vh, 0% 100vh);
+	//clip: rect(auto, auto, 100vh, auto);
+	.page {
+		z-index: 150;
+
+
+	}
+
+}
+
+.slide-up-enter, .slide-up-leave-active {
+	//opacity: 0;
+}
+
+.slide-up-enter {
+	clip-path: polygon(0% 0%, 100vw 0%, 100vw 0%, 0% 0%);
+	//clip: rect(auto, auto, 0vh, auto);
+}
+
+/*.slide-right*/
+.slide-right-leave-active {
+	display: none;
+}
+
+.slide-right-enter-active {
+	transition: clip-path 1s;
+	//transition-timing-function: linear;
+	//transition-timing-function: cubic-bezier(0.81, 0.23, 0.33, 0.76);
+	//transition-timing-function: cubic-bezier(1, 0.29, 0.49, 0.79);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+
+	.slide-right {
+		z-index: 150;
+
+
+	}
+
+}
+
+.slide-right-enter, .slide-right-leave-active {
+	//opacity: 0;
+}
+
+.slide-right-enter {
+	clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%);
+}
+
+/**/
+.overlay-top,
+.overlay-right,
+.overlay-bottom,
+.overlay-left {
+	z-index: 10;
+}
+
+/**/
+
+.page__b-intro-simple {
+	position: relative;
+	z-index: 10;
+}
+
+.page__footer {
+	position: relative;
+	z-index: 10;
+}
+
+.page__b-second-main-slider-main {
+	position: relative;
+	z-index: 10;
+	margin-top: calc(#{rem(340px)} * -1);
+}
+.page__b-about-project-main {
+	margin-top: calc(var(--g12) * (-1));
+	z-index: 10;
+	position: relative;
+	padding-bottom: rem(412px);
+	background: #3F5E52;
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: -1px;
+		width: 100%;
+		height: rem(144px);
+		background: #F9F9F9;
+		clip-path: polygon(0 0, 0% 100%, 100% 100%);
+	}
+}
+.page__b-news-slider,
+.page__b-contacts-small {
+	margin: 0;
+	@include margin-bottom-not-last(0px);
+}
+.page__b-second-main-slider {
+	margin-top: -1px !important;
+}
+.page__b-main {
+	margin-bottom: 0 !important;
+}
+@include media-breakpoint-down(md) {
+	.page__b-about-project-main {
+		margin-top: 0;
+	}
+}
+
+@include media-breakpoint-down(xs) {
+	.page__b-about-project-main {
+		padding-bottom: g(12);
+		&:after {
+			display: none;
+		}
+	}
+	.page__b-second-main-slider-main {
+		margin-top: calc(var(--g12) * -1);
+	}
+}

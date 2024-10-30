@@ -1,0 +1,5 @@
+.c-multiselect {
+	user-select: none;
+	@include multiselect;
+	@include multiselect-filter;
+}

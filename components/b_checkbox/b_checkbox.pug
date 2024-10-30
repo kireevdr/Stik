@@ -1,0 +1,22 @@
+include ../../node_modules/bemto.pug/bemto.pug
+
++b.b-checkbox(:class='mode')
+	+e.LABEL.label
+		+e.INPUT.input(
+			type='checkbox'
+			:checked="check"
+			v-model='localValue'
+		)
+		span(v-html='text')
+
+
+
+
+
+
+
+
+
+
+
+

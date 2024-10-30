@@ -1,0 +1,90 @@
+$gamburger-height: 13px;
+$gamburger-width: 30px;
+$gamburger-line-height: 3px;
+$gamburger-color: #fff;
+$gamburger-transition: 0.4s;
+
+.gamburger {
+	font-size: 10px;
+	width: $gamburger-width;
+	display: inline-block;
+	height: $gamburger-height;
+	transition: 0s;
+	position: relative;
+	cursor: pointer;
+
+	@include media-breakpoint-down(sm) {
+		font-size: 7px;
+	}
+
+	&.open {
+		//overflow: hidden;
+	}
+}
+
+.gamburger {
+	span {
+		display: block;
+		height: $gamburger-line-height;
+		line-height: 1;
+		background: $gamburger-color;
+		position: absolute;
+		transition: 0.2s;
+	}
+
+	&:hover {
+		span {
+			background: #F1F1F1;
+		}
+	}
+}
+
+.gamburger-line1 {
+	width: 100%;
+	top: 0;
+	right: 0;
+	transition: $gamburger-transition;
+}
+
+.gamburger-line2 {
+	width: 100%;
+	bottom: 0;
+	transform: scale(0.75, 1);
+	transform-origin: right center;
+}
+
+.gamburger-line3 {
+	top: 100%;
+	margin-top: - $gamburger-line-height;
+	left: 0;
+	transition: $gamburger-transition;
+	//transform: scale(0.5, 1);
+	transform-origin: right center;
+}
+
+.gamburger.open .gamburger-line1 {
+	transform: rotate(45deg);
+	top: 50%;
+	margin-top: - $gamburger-line-height / 2;
+}
+
+.gamburger.open .gamburger-line2 {
+	position: absolute;
+	right: -400vw;
+	left: auto;
+}
+
+.gamburger.open .gamburger-line3 {
+	transform: rotate(-45deg);
+	top: 50%;
+	margin-top: - $gamburger-line-height / 2;
+	transform-origin: center;
+}
+
+
+@include media-breakpoint-down(xs) {
+	.gamburger {
+		display: block;
+		max-width: 40px;
+	}
+}
